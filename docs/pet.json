@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "exported_at": "2026-10-13",
+  "pet": {
+    "id": "pet_6abd41eef0f481919d149ed7592aeb99",
+    "name": "Haru Urara",
+    "description": "Haru Urara de Uma Musume: alegre y perseverante, en estilo chibi anime.",
+    "is_custom": true,
+    "was_active_at_export": true
+  },
+  "spritesheet": {
+    "path": "assets/sprites/haru-urara-spritesheet.png",
+    "version": 2,
+    "mime_type": "image/png",
+    "width": 1536,
+    "height": 2288,
+    "columns": 8,
+    "rows": 11,
+    "cell_width": 192,
+    "cell_height": 208,
+    "file_size_bytes": 2569497,
+    "sha256": "77e3c7737716ca204c810ea3312905074c4293080eefb085034a9270b2e70178",
+    "validated": true,
+    "frames_per_row": [6, 8, 8, 4, 5, 8, 6, 6, 6, 8, 8]
+  },
+  "source_chat": {
+    "title": "Visualizar mascota",
+    "id": "6abd3c0f-77b0-83ea-aa3a-d18f391b68f9"
+  }
+}
+
