@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "directions": [
+    {"direction":"000","expected":"up","observed":"Frontal con barbilla elevada y pupilas hacia el borde superior.","verdict":"pass","evidence":"Rostro visible; eje vertical ascendente sin giro corporal."},
+    {"direction":"022.5","expected":"up-right","observed":"Mirada y rostro ligeramente arriba-derecha.","verdict":"pass","evidence":"Primer paso diagonal continuo desde 000."},
+    {"direction":"045","expected":"up-right","observed":"Mirada diagonal arriba-derecha clara.","verdict":"pass","evidence":"Pupilas, nariz y cabeza ocupan el cuadrante superior derecho."},
+    {"direction":"067.5","expected":"up-right","observed":"Perfil progresivo hacia derecha con elevación leve.","verdict":"pass","evidence":"Paso intermedio coherente antes de 090."},
+    {"direction":"090","expected":"right","observed":"Perfil y mirada inequívocos hacia pantalla-derecha.","verdict":"pass","evidence":"Nariz y superficie facial apuntan al borde derecho."},
+    {"direction":"112.5","expected":"down-right","observed":"Perfil derecho descendente.","verdict":"pass","evidence":"Pupilas y barbilla bajan después de 090."},
+    {"direction":"135","expected":"down-right","observed":"Mirada diagonal abajo-derecha clara.","verdict":"pass","evidence":"Rostro visible y transición continua hacia 180."},
+    {"direction":"157.5","expected":"down-right","observed":"Casi frontal hacia abajo con señal derecha residual.","verdict":"pass","evidence":"Último paso del arco derecho antes de 180."},
+    {"direction":"180","expected":"down","observed":"Frontal con pupilas y barbilla dirigidas abajo.","verdict":"pass","evidence":"Rostro visible y cardinal vertical descendente inequívoca."},
+    {"direction":"202.5","expected":"down-left","observed":"Mirada abajo-izquierda leve.","verdict":"pass","evidence":"Primer paso continuo del arco izquierdo."},
+    {"direction":"225","expected":"down-left","observed":"Mirada diagonal abajo-izquierda.","verdict":"pass","evidence":"Pupilas y orientación facial ocupan cuadrante inferior izquierdo."},
+    {"direction":"247.5","expected":"down-left","observed":"Perfil izquierdo con inclinación descendente leve.","verdict":"pass","evidence":"Paso intermedio coherente antes de 270."},
+    {"direction":"270","expected":"left","observed":"Perfil y mirada inequívocos hacia pantalla-izquierda.","verdict":"pass","evidence":"Nariz y superficie facial apuntan al borde izquierdo."},
+    {"direction":"292.5","expected":"up-left","observed":"Perfil izquierdo ascendente.","verdict":"pass","evidence":"Pupilas y barbilla comienzan a elevarse después de 270."},
+    {"direction":"315","expected":"up-left","observed":"Mirada diagonal arriba-izquierda clara.","verdict":"pass","evidence":"Rostro visible y cuadrante superior izquierdo legible."},
+    {"direction":"337.5","expected":"up-left","observed":"Casi frontal hacia arriba con señal izquierda residual.","verdict":"pass","evidence":"Cierra el arco de manera natural hacia 000."}
+  ]
+}

@@ -1,0 +1,7 @@
+Create one clean full-body reference sprite for ChatGPT pet Haru Urara.
+
+Pet identity: Preserve Haru Urara identity, pink bob hair, horse ears and tail, white-and-pink racing-idol outfit, boots, bright magenta eyes, optimistic personality, compact full-body chibi proportions. Upgrade toward the polished concept: cleaner cel shading, stronger silhouettes, more expressive poses, secondary motion in hair ears skirt ribbons and tail. No text, logos, detached effects, shadows, scenery, or props not already part of identity..
+Style: Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `sticker`: Polished sticker mascot with bold clean shapes, crisp outline, flat colors, and minimal highlight detail. User style notes: High-quality polished chibi anime game sprite; crisp clean outline, soft cel shading, readable at 192x208, consistent proportions and costume across every frame..
+
+
+Place a single centered pose on a perfectly flat pure green #00FF00 chroma-key background. Keep the full pet visible, compact, readable at 192x208, and easy to animate. Preserve approved reference identity cues. No scenery, text, borders, checkerboard transparency, shadows, glows, detached effects, or extra props. Keep #00FF00 and close colors out of the pet, props, highlights, and effects.

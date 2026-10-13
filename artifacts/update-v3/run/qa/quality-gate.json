@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "atlas": "C:\\Users\\USERWCARLOS01\\src\\workspace\\pet-haru\\artifacts\\update-v3\\haru-v3-spritesheet.png",
+  "encoded_bytes": 2988173,
+  "sha256": "4546a69582b3b63ed3016914fe7a97156d4528f08db678d26fef8f7e255dbb63",
+  "jump": {
+    "idle_baseline": 202,
+    "jump_baselines": [
+      202,
+      198,
+      155,
+      202,
+      202
+    ],
+    "airborne_lift_pixels": 47,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 95.5,
+    "look_centers_x": [
+      99.5,
+      95.0,
+      93.0,
+      91.0,
+      90.0,
+      91.0,
+      92.0,
+      95.0,
+      99.5,
+      99.5,
+      100.5,
+      99.5,
+      99.5,
+      92.0,
+      91.0,
+      97.0
+    ],
+    "look_widths": [
+      113,
+      116,
+      120,
+      122,
+      124,
+      124,
+      120,
+      112,
+      95,
+      95,
+      93,
+      93,
+      87,
+      104,
+      102,
+      96
+    ],
+    "maximum_center_drift_pixels": 5.5,
+    "maximum_width_ratio": 1.4252873563218391
+  },
+  "errors": [],
+  "warnings": [
+    "000 has transparent interior hole rows (y=12, y=13, y=14, y=15, +2 more)",
+    "157.5->180 diff is a local outlier (5179 pixels vs neighbor average 1878)",
+    "157.5->180 center shift is high (11.9px)",
+    "157.5->180 sprite area ratio is high (1.25)",
+    "270->292.5 diff is a local outlier (3943 pixels vs neighbor average 2242)",
+    "337.5->000 diff is a local outlier (6686 pixels vs neighbor average 3064)",
+    "337.5->000 center shift is high (15.7px)",
+    "337.5->000 sprite area ratio is high (1.43)"
+  ]
+}
