@@ -18,6 +18,12 @@ Estas reglas aplican a todos los agentes de IA que trabajen en este repositorio 
    - Una autorización aplica únicamente a la acción y al alcance expresamente aprobados; no concede permiso general para otras operaciones externas.
    - Las autorizaciones permanentes escritas en este archivo, incluida la subida automática establecida en la regla 1, siguen siendo válidas dentro de su alcance específico.
 
+3. La carpeta `temp/` está fuera del alcance normal de trabajo y ningún agente de IA puede acceder a ella sin autorización explícita del usuario:
+   - No leer, enumerar, inspeccionar, buscar, analizar, resumir ni modificar su contenido.
+   - No incluir `temp/` en búsquedas, inventarios, análisis globales ni comandos recursivos del repositorio.
+   - Si una tarea requiere usar un archivo de `temp/`, indicar previamente la ruta y la acción exactas, y esperar autorización.
+   - Una autorización puntual sobre un archivo o acción no concede acceso al resto de la carpeta.
+
 ## Incorporación de reglas nuevas
 
 - Agregar a este archivo las reglas nuevas que solicite el usuario.
