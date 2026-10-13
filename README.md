@@ -59,6 +59,12 @@ python .\scripts\generate_previews.py
 python .\scripts\validate_pet.py --update-metadata
 ```
 
+Ejecuta la suite de integridad y la prueba HTTP del visor:
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
 La validación comprueba dimensiones, celdas transparentes, frames vacíos o duplicados, estabilidad aproximada de la línea de suelo, continuidad del ciclo, tamaño y hash SHA-256.
 
 ## Estados

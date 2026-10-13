@@ -40,7 +40,7 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.35rem); }
 .stage.light { background: #fff; }
 .stage.dark { background: #24222a; }
 .stage.pink { background: radial-gradient(circle, #ffd4e2, #f595b6); }
-.ground { position: absolute; z-index: 1; top: calc(50% + 178px); width: 45%; height: 2px; background: linear-gradient(90deg, transparent, rgba(255,113,159,.85), transparent); }
+.ground { position: absolute; z-index: 1; top: calc(50% + 198px); width: 45%; height: 2px; background: linear-gradient(90deg, transparent, rgba(255,113,159,.85), transparent); }
 .transport { display: flex; align-items: center; gap: 10px; padding-top: 18px; }
 .transport button { width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.04); cursor: pointer; }
 .transport button:hover { border-color: rgba(255,113,159,.5); background: rgba(255,113,159,.09); }
@@ -73,5 +73,5 @@ legend { margin-bottom: 13px; font-size: .85rem; font-weight: 700; }
 .state-card img { width: 54px; height: 58px; object-fit: contain; border-radius: 10px; background: rgba(255,255,255,.06); }
 .state-card strong { display: block; text-transform: capitalize; }.state-card small { color: var(--muted); }
 @media (max-width: 800px) { .hero,.section-title { align-items: flex-start; flex-direction: column; }.workspace { grid-template-columns: 1fr; }.stage-wrap { border-right: 0; border-bottom: 1px solid var(--line); }.stage { min-height: 430px; }.state-grid { grid-template-columns: repeat(2,1fr); }.section-title > p { text-align: left; } }
-@media (max-width: 520px) { .shell { width: min(100% - 20px, 1180px); padding-top: 32px; }.status { display: none; }.stage-wrap { padding: 13px; }.stage { min-height: 390px; }.state-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .shell { width: min(100% - 20px, 1180px); padding-top: 32px; }.status { display: none; }.stage-wrap { padding: 13px; }.stage { min-height: 390px; }.stage img { transform: scale(1.65); }.ground { top: calc(50% + 164px); }.state-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; transition: none !important; } }
