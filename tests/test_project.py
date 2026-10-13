@@ -46,9 +46,17 @@ class ProjectIntegrityTests(unittest.TestCase):
     def test_readme_local_links_exist(self) -> None:
         source = (ROOT / "README.md").read_text(encoding="utf-8")
         links = re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", source)
-        local_links = [link for link in links if not re.match(r"^[a-z]+://", link)]
+        local_links = [link for link in links if not re.match(r"^(?:[a-z]+://|#)", link)]
         missing = [link for link in local_links if not (ROOT / link).exists()]
         self.assertEqual(missing, [])
+
+        headings = re.findall(r"^#{2,6}\s+(.+)$", source, flags=re.MULTILINE)
+        anchors = {
+            "#" + re.sub(r"[^\w -]", "", heading.lower()).replace(" ", "-")
+            for heading in headings
+        }
+        internal_links = [link for link in links if link.startswith("#")]
+        self.assertEqual([link for link in internal_links if link not in anchors], [])
 
     def test_no_personal_absolute_paths_in_sources(self) -> None:
         roots = [ROOT / "scripts", ROOT / "viewer", ROOT / "docs", ROOT / ".github"]
