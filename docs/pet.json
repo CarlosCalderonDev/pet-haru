@@ -21,11 +21,22 @@
     "file_size_bytes": 2569497,
     "sha256": "77e3c7737716ca204c810ea3312905074c4293080eefb085034a9270b2e70178",
     "validated": true,
-    "frames_per_row": [6, 8, 8, 4, 5, 8, 6, 6, 6, 8, 8]
+    "frames_per_row": [
+      6,
+      8,
+      8,
+      4,
+      5,
+      8,
+      6,
+      6,
+      6,
+      8,
+      8
+    ]
   },
   "source_chat": {
     "title": "Visualizar mascota",
     "id": "6abd3c0f-77b0-83ea-aa3a-d18f391b68f9"
   }
 }
-

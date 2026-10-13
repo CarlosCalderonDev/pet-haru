@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff6f9f">
+  <title>Haru Urara · Animation Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">PET ANIMATION LAB</p>
+        <h1>Haru <span>Urara</span></h1>
+        <p class="intro">Reproduce cada estado, ajusta el ritmo y revisa la silueta sobre distintos fondos.</p>
+      </div>
+      <div class="status"><i></i><span>Sprite v2 validado</span></div>
+    </header>
+
+    <section class="workspace">
+      <div class="stage-wrap">
+        <div id="stage" class="stage checker" aria-label="Vista previa de animación">
+          <img id="sprite" alt="Haru Urara animada" width="192" height="208">
+          <div class="ground"></div>
+        </div>
+        <div class="transport">
+          <button id="play" class="primary" type="button" aria-label="Pausar animación">❚❚</button>
+          <button id="previous" type="button" aria-label="Frame anterior">←</button>
+          <button id="next" type="button" aria-label="Frame siguiente">→</button>
+          <div class="frame-readout"><strong id="frame">01</strong><span id="total">/ 06</span></div>
+        </div>
+      </div>
+
+      <aside class="controls">
+        <div class="control-group">
+          <label for="speed">Velocidad <output id="speed-value">180 ms</output></label>
+          <input id="speed" type="range" min="60" max="500" step="10" value="180">
+        </div>
+        <div class="control-group">
+          <label for="scale">Escala <output id="scale-value">2×</output></label>
+          <input id="scale" type="range" min="1" max="3" step="0.25" value="2">
+        </div>
+        <fieldset>
+          <legend>Fondo</legend>
+          <div class="swatches">
+            <button type="button" class="swatch active checker" data-background="checker" aria-label="Cuadrícula"></button>
+            <button type="button" class="swatch light" data-background="light" aria-label="Claro"></button>
+            <button type="button" class="swatch dark" data-background="dark" aria-label="Oscuro"></button>
+            <button type="button" class="swatch pink" data-background="pink" aria-label="Rosa"></button>
+          </div>
+        </fieldset>
+        <label class="toggle"><input id="ground-toggle" type="checkbox" checked><span></span>Mostrar línea de suelo</label>
+      </aside>
+    </section>
+
+    <section>
+      <div class="section-title"><div><p class="eyebrow">ESTADOS</p><h2>Biblioteca de movimientos</h2></div><p id="state-description"></p></div>
+      <div id="state-grid" class="state-grid"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
