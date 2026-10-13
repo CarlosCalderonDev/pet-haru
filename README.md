@@ -11,6 +11,7 @@ Repositorio de producción, validación y evolución de la mascota personalizada
 - [Fuente de verdad y archivos generados](#fuente-de-verdad-y-archivos-generados)
 - [Formato del sprite sheet](#formato-del-sprite-sheet)
 - [Animation Lab](#animation-lab)
+- [Mascota de escritorio](#mascota-de-escritorio-para-windows)
 - [Construcción y comandos](#construcción-y-comandos)
 - [Validación y reporte QA](#validación-y-reporte-qa)
 - [Pruebas automatizadas](#pruebas-automatizadas)
@@ -382,3 +383,18 @@ No regeneres ni publiques hasta comparar el archivo con la última versión conf
 - [`docs/sprite-layout.md`](docs/sprite-layout.md): disposición técnica.
 - [`docs/visual-roadmap.md`](docs/visual-roadmap.md): guía artística.
 - [`qa/validation.json`](qa/validation.json): evidencia de validación actual.
+## Mascota de escritorio para Windows
+
+Haru también puede ejecutarse como una mascota flotante, incluso con ChatGPT cerrado. Haz doble clic en [`desktop/INICIAR-HARU.bat`](desktop/INICIAR-HARU.bat) o ejecuta:
+
+```powershell
+python .\desktop\haru_desktop.py
+```
+
+La ventana es transparente, no tiene bordes y permanece encima de las demás ventanas. Haru sigue el cursor en 16 direcciones, camina por la pantalla y ofrece estos controles:
+
+- Arrastra con el botón izquierdo para moverla.
+- Haz doble clic para saltar.
+- Haz clic derecho para saludar, revisar, pausar, controlar la caminata o cerrar.
+- Presiona `Esc` para cerrar inmediatamente.
+

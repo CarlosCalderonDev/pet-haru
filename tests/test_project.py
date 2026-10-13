@@ -18,9 +18,11 @@ SCRIPTS = ROOT / "scripts"
 import sys
 
 sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(ROOT / "desktop"))
 
 from pet_config import STATES, load_metadata, sprite_settings  # noqa: E402
 from validate_pet import validate  # noqa: E402
+from haru_desktop import direction_index  # noqa: E402
 
 
 class ProjectIntegrityTests(unittest.TestCase):
@@ -99,6 +101,18 @@ class ViewerHttpSmokeTests(unittest.TestCase):
                     self.assertEqual(response.status, 200)
                     self.assertIn(content_type, response.headers.get_content_type())
                     self.assertGreater(len(response.read()), 0)
+
+
+class DesktopPetTests(unittest.TestCase):
+    def test_cursor_vectors_map_to_clockwise_look_directions(self) -> None:
+        self.assertEqual(direction_index(0, -100), 0)
+        self.assertEqual(direction_index(100, 0), 4)
+        self.assertEqual(direction_index(0, 100), 8)
+        self.assertEqual(direction_index(-100, 0), 12)
+
+    def test_desktop_launcher_and_atlas_exist(self) -> None:
+        self.assertTrue((ROOT / "desktop" / "INICIAR-HARU.bat").is_file())
+        self.assertTrue((ROOT / "assets" / "sprites" / "haru-urara-spritesheet.png").is_file())
 
 
 if __name__ == "__main__":

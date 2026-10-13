@@ -1,5 +1,13 @@
 # Historial de cambios
 
+## 2026-10-13 — Mascota de escritorio
+
+- Aplicación flotante para Windows con transparencia y modo siempre visible.
+- Seguimiento del cursor mediante las 16 direcciones del atlas v2.
+- Caminata automática, arrastre, salto, saludo, revisión, pausa y menú contextual.
+- Atlas canónico sincronizado con el diseño v3 activo en ChatGPT.
+- Lanzador de doble clic y pruebas automatizadas de dirección de mirada.
+
 ## Próxima versión
 
 ### Añadido
